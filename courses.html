@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses | Ankush Classes</title>
+  <meta name="description" content="Explore academic courses and subject areas covered by Ankush Classes across Humanities, English, and Law basics for Classes 8 to 12.">
+  <link rel="canonical" href="https://ankushclasses.vercel.app/courses.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankushclasses.vercel.app/courses.html">
+  <meta property="og:title" content="Courses | Ankush Classes">
+  <meta property="og:description" content="Explore subject areas covered by Ankush Classes across Humanities, English, and Law basics.">
+  <meta property="og:image" content="https://ankushclasses.vercel.app/assets/logo/ankush-classes-logo.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ankushclasses.vercel.app/courses.html">
+  <meta name="twitter:title" content="Courses | Ankush Classes">
+  <meta name="twitter:description" content="Explore subject areas covered by Ankush Classes across Humanities, English, and Law basics.">
+  <meta name="twitter:image" content="https://ankushclasses.vercel.app/assets/logo/ankush-classes-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+
+  <!-- Tailwind CDN & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { green: '#00BF63', black: '#000000', dark: '#0a0d10' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-black text-white antialiased">
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <div class="container-custom">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-link" aria-label="Ankush Classes Home">
+          <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes Official Logo" class="brand-logo-img">
+          <span class="brand-text">Ankush <span>Classes</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link active">Courses</a>
+          <a href="study-materials.html" class="nav-link">Study Materials</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="study-materials.html" class="nav-cta-btn">Study Materials</a>
+        </nav>
+
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="mobile-drawer-header">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes" class="w-8 h-8 object-contain rounded">
+        <span class="font-heading font-bold text-xl">Ankush <span class="text-[#00BF63]">Classes</span></span>
+      </div>
+      <button id="close-drawer" class="text-gray-400 hover:text-white p-2" aria-label="Close menu">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+    </div>
+
+    <div class="mobile-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link active">Courses</a>
+      <a href="study-materials.html" class="mobile-nav-link">Study Materials</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="support.html" class="mobile-nav-link">Support</a>
+      <div class="pt-6 border-t border-[#1e252d] flex flex-col gap-3">
+        <a href="study-materials.html" class="btn btn-primary text-center">Access Study Materials</a>
+        <a href="https://www.youtube.com/@ankushclassesjpg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-center">
+          <i class="fab fa-youtube text-[#00BF63]"></i> YouTube Channel
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-28 pb-20">
+    <div class="container-custom">
+      
+      <!-- PAGE HEADER -->
+      <div class="max-w-3xl mb-16">
+        <span class="badge-tag mb-3">Academic Subjects</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Courses & Subject Areas</h1>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          Students can explore the academic subject areas covered by Ankush Classes across Humanities, English, and Law basics for Classes 8 to 12. Each area is focused on structured understanding and exam preparation.
+        </p>
+      </div>
+
+      <!-- CATEGORY 1: HUMANITIES -->
+      <section id="humanities" class="mb-20">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="w-3 h-3 bg-[#00BF63] rounded-sm"></span>
+          <h2 class="text-2xl md:text-3xl font-bold">Humanities</h2>
+        </div>
+        <p class="text-gray-400 text-sm mb-8 max-w-2xl">
+          Comprehensive academic coverage across core Humanities subjects for ICSE, ISC, and CBSE.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- History -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="badge-tag">Classes 8–12</span>
+                <span class="text-xs text-gray-500 font-semibold">ICSE • ISC • CBSE</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">History</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Understand historical events, developments, movements and important themes through structured explanations and study resources.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                Check History Materials <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sociology -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="badge-tag">Classes 11–12</span>
+                <span class="text-xs text-gray-500 font-semibold">ISC • CBSE</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Sociology</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Explore society, social institutions, relationships, change and important sociological concepts in a simple and structured way.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                Check Sociology Materials <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Political Science -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="badge-tag">Classes 11–12</span>
+                <span class="text-xs text-gray-500 font-semibold">ISC • CBSE</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Political Science</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Build a clear understanding of political systems, institutions, government, rights, constitutions and important political concepts.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                Check Political Science Materials <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Geography -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="badge-tag">Classes 8–12</span>
+                <span class="text-xs text-gray-500 font-semibold">ICSE • ISC • CBSE</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Geography</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Study physical and human geography through clear explanations, concepts, maps and exam-focused resources.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                Check Geography Materials <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Civics -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="badge-tag">Classes 8–10</span>
+                <span class="text-xs text-gray-500 font-semibold">ICSE • CBSE</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Civics</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Learn about government, citizenship, rights, responsibilities and democratic institutions.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                Check Civics Materials <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Other Humanities -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="badge-tag">Flexible Category</span>
+                <span class="text-xs text-gray-500 font-semibold">Future Subjects</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Other Humanities</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                A flexible category for future Humanities subjects and additional resources as the platform continues to expand.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <span class="text-xs text-gray-500">Upcoming Subject Additions</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CATEGORY 2: ENGLISH -->
+      <section id="english" class="mb-20">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="w-3 h-3 bg-[#00BF63] rounded-sm"></span>
+          <h2 class="text-2xl md:text-3xl font-bold">English</h2>
+        </div>
+        <p class="text-gray-400 text-sm mb-8 max-w-2xl">
+          Language mastery, grammar fundamentals, and analytical literary preparation for board examinations.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Grammar -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <span class="badge-tag mb-3">Fundamentals</span>
+              <h3 class="text-xl font-bold text-white mb-2">Grammar</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Build stronger grammar fundamentals through clear explanations and practice-oriented resources.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                View Grammar Notes <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Language -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <span class="badge-tag mb-3">Written Expression</span>
+              <h3 class="text-xl font-bold text-white mb-2">Language</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Develop language skills through structured explanations, writing guidance and exam-oriented resources.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                View Language Guides <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Literature -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <span class="badge-tag mb-3">Textual Analysis</span>
+              <h3 class="text-xl font-bold text-white mb-2">Literature</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Study literary texts with accessible explanations, important themes and useful revision material.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                View Literature Guides <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Drama -->
+          <div class="card flex flex-col justify-between">
+            <div>
+              <span class="badge-tag mb-3">Prescribed Plays</span>
+              <h3 class="text-xl font-bold text-white mb-2">Drama</h3>
+              <p class="text-sm text-gray-400 leading-relaxed">
+                Explore prescribed drama texts through structured explanations, characters, themes and important points.
+              </p>
+            </div>
+            <div class="pt-4 mt-6 border-t border-[#1e252d]">
+              <a href="study-materials.html" class="text-xs font-semibold text-[#00BF63] hover:underline flex items-center gap-1.5">
+                View Drama Summaries <i class="fas fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CATEGORY 3: LAW -->
+      <section id="law" class="mb-20">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="w-3 h-3 bg-[#00BF63] rounded-sm"></span>
+          <h2 class="text-2xl md:text-3xl font-bold">Law</h2>
+        </div>
+        <p class="text-gray-400 text-sm mb-8 max-w-2xl">
+          Foundational understanding of legal concepts, constitutional principles, and general legal awareness.
+        </p>
+
+        <div class="max-w-2xl">
+          <div class="card">
+            <span class="badge-tag mb-3">Awareness & Foundations</span>
+            <h3 class="text-2xl font-bold text-white mb-3">Law Basics & Awareness</h3>
+            <p class="text-sm text-gray-300 leading-relaxed mb-6">
+              An introductory space for students interested in understanding basic legal concepts, constitutional ideas, rights and the foundations of law.
+            </p>
+            
+            <div class="disclaimer-box">
+              <i class="fas fa-info-circle text-[#00BF63] mr-1.5"></i>
+              <strong>Educational Disclaimer:</strong> Educational information only. This section is intended for learning and general awareness and does not constitute professional legal advice.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION BANNER -->
+      <section class="p-8 md:p-12 rounded-2xl bg-[#0f1317] border border-[#1e252d] flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Ready to Start Preparing?</h2>
+          <p class="text-sm text-gray-400">Access class-wise and subject-wise study materials, or send us an inquiry.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="study-materials.html" class="btn btn-primary">
+            Go to Study Materials <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">
+            Contact Us
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes" class="w-8 h-8 object-contain rounded">
+            <span class="font-heading font-bold text-lg">Ankush <span class="text-[#00BF63]">Classes</span></span>
+          </div>
+          <p class="text-xs text-gray-400 mb-4 max-w-sm leading-relaxed">
+            Class 8–12 notes, papers and educational resources with a focus on Humanities, English and Law basics.
+          </p>
+          <div class="text-xs text-gray-400">
+            Email: <a href="mailto:ankushchowrasiabusiness@gmail.com" class="text-gray-300 hover:text-[#00BF63] transition">ankushchowrasiabusiness@gmail.com</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Courses</a></li>
+            <li><a href="study-materials.html" class="footer-link">Study Materials</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Support & Legal</h3>
+          <ul class="footer-links">
+            <li><a href="support.html" class="footer-link">Support</a></li>
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Community</h3>
+          <p class="text-xs text-gray-400 mb-3">Follow on YouTube for educational content and subject updates:</p>
+          <a href="https://www.youtube.com/@ankushclassesjpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-[#00BF63] hover:underline">
+            <i class="fab fa-youtube text-red-500 text-sm"></i> @ankushclassesjpg (1,250+ Subs)
+          </a>
+        </div>
+      </div>
+
+      <div class="disclaimer-box text-center mb-8">
+        Ankush Classes provides educational resources for learning and exam preparation. Information provided on this website is for educational purposes and should not be treated as professional legal advice or any other professional service.
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span class="current-year">2026</span> Ankush Classes. All rights reserved.</p>
+        <p class="text-gray-500">Created by Ankush for students.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

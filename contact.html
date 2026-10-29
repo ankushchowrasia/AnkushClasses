@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Ankush Classes</title>
+  <meta name="description" content="Get in touch with Ankush Classes for resource requests, course questions, study guidance, or educational enquiries.">
+  <link rel="canonical" href="https://ankushclasses.vercel.app/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankushclasses.vercel.app/contact.html">
+  <meta property="og:title" content="Contact Ankush Classes">
+  <meta property="og:description" content="Have a question, suggestion, resource request or educational enquiry? Get in touch with Ankush Classes.">
+  <meta property="og:image" content="https://ankushclasses.vercel.app/assets/logo/ankush-classes-logo.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ankushclasses.vercel.app/contact.html">
+  <meta name="twitter:title" content="Contact Ankush Classes">
+  <meta name="twitter:description" content="Have a question, suggestion, resource request or educational enquiry? Get in touch with Ankush Classes.">
+  <meta name="twitter:image" content="https://ankushclasses.vercel.app/assets/logo/ankush-classes-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+
+  <!-- Tailwind CDN & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { green: '#00BF63', black: '#000000', dark: '#0a0d10' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-black text-white antialiased">
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <div class="container-custom">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-link" aria-label="Ankush Classes Home">
+          <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes Official Logo" class="brand-logo-img">
+          <span class="brand-text">Ankush <span>Classes</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="study-materials.html" class="nav-link">Study Materials</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+          <a href="study-materials.html" class="nav-cta-btn">Study Materials</a>
+        </nav>
+
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="mobile-drawer-header">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes" class="w-8 h-8 object-contain rounded">
+        <span class="font-heading font-bold text-xl">Ankush <span class="text-[#00BF63]">Classes</span></span>
+      </div>
+      <button id="close-drawer" class="text-gray-400 hover:text-white p-2" aria-label="Close menu">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+    </div>
+
+    <div class="mobile-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link">Courses</a>
+      <a href="study-materials.html" class="mobile-nav-link">Study Materials</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact</a>
+      <a href="support.html" class="mobile-nav-link">Support</a>
+      <div class="pt-6 border-t border-[#1e252d] flex flex-col gap-3">
+        <a href="study-materials.html" class="btn btn-primary text-center">Access Study Materials</a>
+        <a href="https://www.youtube.com/@ankushclassesjpg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-center">
+          <i class="fab fa-youtube text-[#00BF63]"></i> YouTube Channel
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-28 pb-20">
+    <div class="container-custom">
+
+      <div class="max-w-3xl mb-12">
+        <span class="badge-tag mb-3">Reach Out</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Contact Ankush Classes</h1>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          Have a question, suggestion, resource request or educational enquiry? Get in touch with Ankush Classes.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-10">
+
+        <!-- CONTACT INFO CARD -->
+        <div class="lg:col-span-1 space-y-6">
+          <div class="card">
+            <h2 class="text-lg font-bold text-white mb-4">Direct Contact</h2>
+            <div class="space-y-4">
+              <div>
+                <span class="text-xs uppercase tracking-wider text-gray-500 font-semibold block mb-1">Official Email</span>
+                <a href="mailto:ankushchowrasiabusiness@gmail.com" class="text-sm font-medium text-[#00BF63] hover:underline break-all">
+                  ankushchowrasiabusiness@gmail.com
+                </a>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-gray-500 font-semibold block mb-1">YouTube Channel</span>
+                <a href="https://www.youtube.com/@ankushclassesjpg" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-gray-300 hover:text-[#00BF63] transition flex items-center gap-1.5">
+                  <i class="fab fa-youtube text-red-500"></i> @ankushclassesjpg
+                </a>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-gray-500 font-semibold block mb-1">Target Classes</span>
+                <p class="text-sm text-gray-400">Class 8 to Class 12 (ICSE • ISC • CBSE)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-[#07090b]">
+            <h3 class="text-sm font-bold text-white mb-2 flex items-center gap-2">
+              <i class="fas fa-lightbulb text-[#00BF63]"></i> Resource Requests
+            </h3>
+            <p class="text-xs text-gray-400 leading-relaxed">
+              If you need a specific chapter summary, previous year question paper, or revision notes for your board exam, please specify your class, board, and subject in the message form.
+            </p>
+          </div>
+        </div>
+
+        <!-- FORM WITH AJAX SUBMISSION (NO FORMSPREE REDIRECT) -->
+        <div class="lg:col-span-2">
+          <form id="contact-form" action="https://formspree.io/f/mdkrlqbj" method="POST" class="card">
+            <h2 class="text-2xl font-bold mb-6">Send a Message</h2>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" required placeholder="yourname@example.com" class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Type your message, query, or study material request here..." class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn btn-primary w-full py-3">
+              <i class="fas fa-paper-plane text-xs"></i> Send Message
+            </button>
+
+            <!-- Inline Feedback (No page redirection) -->
+            <div id="alert-success" class="alert-box alert-success" role="alert"></div>
+            <div id="alert-error" class="alert-box alert-error" role="alert"></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes" class="w-8 h-8 object-contain rounded">
+            <span class="font-heading font-bold text-lg">Ankush <span class="text-[#00BF63]">Classes</span></span>
+          </div>
+          <p class="text-xs text-gray-400 mb-4 max-w-sm leading-relaxed">
+            Class 8–12 notes, papers and educational resources with a focus on Humanities, English and Law basics.
+          </p>
+          <div class="text-xs text-gray-400">
+            Email: <a href="mailto:ankushchowrasiabusiness@gmail.com" class="text-gray-300 hover:text-[#00BF63] transition">ankushchowrasiabusiness@gmail.com</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Courses</a></li>
+            <li><a href="study-materials.html" class="footer-link">Study Materials</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Support & Legal</h3>
+          <ul class="footer-links">
+            <li><a href="support.html" class="footer-link">Support</a></li>
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Community</h3>
+          <p class="text-xs text-gray-400 mb-3">Follow on YouTube for educational content and subject updates:</p>
+          <a href="https://www.youtube.com/@ankushclassesjpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-[#00BF63] hover:underline">
+            <i class="fab fa-youtube text-red-500 text-sm"></i> @ankushclassesjpg (1,250+ Subs)
+          </a>
+        </div>
+      </div>
+
+      <div class="disclaimer-box text-center mb-8">
+        Ankush Classes provides educational resources for learning and exam preparation. Information provided on this website is for educational purposes and should not be treated as professional legal advice or any other professional service.
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span class="current-year">2026</span> Ankush Classes. All rights reserved.</p>
+        <p class="text-gray-500">Created by Ankush for students.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

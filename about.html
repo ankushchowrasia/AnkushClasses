@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Ankush Classes</title>
+  <meta name="description" content="Learn about Ankush Classes, an educational resource platform created by Ankush for students from Class 8 to Class 12 across ICSE, ISC, and CBSE.">
+  <link rel="canonical" href="https://ankushclasses.vercel.app/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankushclasses.vercel.app/about.html">
+  <meta property="og:title" content="About Ankush Classes">
+  <meta property="og:description" content="An educational platform created by Ankush to provide clear, useful and accessible learning resources for students from Class 8 to Class 12.">
+  <meta property="og:image" content="https://ankushclasses.vercel.app/assets/logo/ankush-classes-logo.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ankushclasses.vercel.app/about.html">
+  <meta name="twitter:title" content="About Ankush Classes">
+  <meta name="twitter:description" content="An educational platform created by Ankush to provide clear, useful and accessible learning resources for students from Class 8 to Class 12.">
+  <meta name="twitter:image" content="https://ankushclasses.vercel.app/assets/logo/ankush-classes-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+
+  <!-- Tailwind CDN & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { green: '#00BF63', black: '#000000', dark: '#0a0d10' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-black text-white antialiased">
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <div class="container-custom">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-link" aria-label="Ankush Classes Home">
+          <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes Official Logo" class="brand-logo-img">
+          <span class="brand-text">Ankush <span>Classes</span></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="study-materials.html" class="nav-link">Study Materials</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="study-materials.html" class="nav-cta-btn">Study Materials</a>
+        </nav>
+
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="mobile-drawer-header">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes" class="w-8 h-8 object-contain rounded">
+        <span class="font-heading font-bold text-xl">Ankush <span class="text-[#00BF63]">Classes</span></span>
+      </div>
+      <button id="close-drawer" class="text-gray-400 hover:text-white p-2" aria-label="Close menu">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+    </div>
+
+    <div class="mobile-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="courses.html" class="mobile-nav-link">Courses</a>
+      <a href="study-materials.html" class="mobile-nav-link">Study Materials</a>
+      <a href="about.html" class="mobile-nav-link active">About Us</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="support.html" class="mobile-nav-link">Support</a>
+      <div class="pt-6 border-t border-[#1e252d] flex flex-col gap-3">
+        <a href="study-materials.html" class="btn btn-primary text-center">Access Study Materials</a>
+        <a href="https://www.youtube.com/@ankushclassesjpg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-center">
+          <i class="fab fa-youtube text-[#00BF63]"></i> YouTube Channel
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-28 pb-20">
+    <div class="container-custom">
+      
+      <!-- HERO / INTRO -->
+      <div class="max-w-3xl mb-16">
+        <span class="badge-tag mb-3">Platform Background</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6">About Ankush Classes</h1>
+        <p class="text-xl text-gray-200 leading-relaxed mb-6 font-medium">
+          Ankush Classes is an educational platform created by Ankush to provide clear, useful and accessible learning resources for students from Class 8 to Class 12.
+        </p>
+        <p class="text-base text-gray-400 leading-relaxed">
+          The platform was founded on the belief that exam preparation and conceptual understanding improve significantly when students have access to well-organized notes, focused question papers, and reliable subject explanations.
+        </p>
+      </div>
+
+      <!-- WHAT WE PROVIDE -->
+      <section class="mb-16">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-3 h-3 bg-[#00BF63] rounded-sm"></span>
+          <h2 class="text-2xl md:text-3xl font-bold">What We Provide</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="card">
+            <h3 class="text-base font-bold text-white mb-2">Subject-Focused Notes</h3>
+            <p class="text-xs text-gray-400">Structured chapter summaries, key points, and revision notes tailored for quick understanding.</p>
+          </div>
+          <div class="card">
+            <h3 class="text-base font-bold text-white mb-2">Question & Sample Papers</h3>
+            <p class="text-xs text-gray-400">Exam-oriented questions, past papers, and model answers to help benchmark progress.</p>
+          </div>
+          <div class="card">
+            <h3 class="text-base font-bold text-white mb-2">Humanities & English</h3>
+            <p class="text-xs text-gray-400">In-depth materials across History, Sociology, Political Science, Geography, Civics, and English.</p>
+          </div>
+          <div class="card">
+            <h3 class="text-base font-bold text-white mb-2">Law Basics & Awareness</h3>
+            <p class="text-xs text-gray-400">Introductory concepts explaining legal frameworks, fundamental rights, and constitutional principles.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLASSES & BOARDS -->
+      <section class="mb-16 card p-8">
+        <h2 class="text-2xl font-bold mb-4">Classes & Boards</h2>
+        <p class="text-gray-300 text-base leading-relaxed mb-6 max-w-3xl">
+          Ankush Classes currently focuses on students from Classes 8 to 12, with dedicated resources and subject notes designed for ICSE, ISC, and CBSE curricula.
+        </p>
+        <div class="grid sm:grid-cols-3 gap-4 text-xs font-semibold">
+          <div class="p-4 rounded-lg bg-[#07090b] border border-[#1e252d]">
+            <div class="text-[#00BF63] text-sm font-bold mb-1">ICSE</div>
+            <p class="text-gray-400">Classes 8–10 foundation and board resources.</p>
+          </div>
+          <div class="p-4 rounded-lg bg-[#07090b] border border-[#1e252d]">
+            <div class="text-[#00BF63] text-sm font-bold mb-1">ISC</div>
+            <p class="text-gray-400">Classes 11–12 Humanities and Arts stream specialization.</p>
+          </div>
+          <div class="p-4 rounded-lg bg-[#07090b] border border-[#1e252d]">
+            <div class="text-[#00BF63] text-sm font-bold mb-1">CBSE</div>
+            <p class="text-gray-400">Classes 8–12 foundational and high school subject support.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR APPROACH -->
+      <section class="mb-16">
+        <div class="card p-8 bg-[#0a0d10]">
+          <h2 class="text-2xl font-bold mb-3">Our Approach</h2>
+          <p class="text-gray-200 text-lg font-medium mb-4">
+            The goal is simple: make learning resources easier to find, easier to understand and easier to use during preparation.
+          </p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">
+            Rather than creating complicated barriers, Ankush Classes organizes study materials directly by subject and class. Every resource is curated to give students clarity, save time during revision, and build confidence ahead of examinations.
+          </p>
+        </div>
+      </section>
+
+      <!-- YOUTUBE & FUTURE DEVELOPMENT -->
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        
+        <div class="card flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
+              <i class="fab fa-youtube text-red-500"></i> YouTube Channel
+            </h3>
+            <p class="text-sm text-gray-400 leading-relaxed mb-4">
+              The official Ankush Classes YouTube channel provides supplementary educational videos, discussions of key historical events, syllabus breakdowns, and study strategies.
+            </p>
+          </div>
+          <a href="https://www.youtube.com/@ankushclassesjpg" target="_blank" rel="noopener noreferrer" class="btn btn-secondary text-xs self-start">
+            Visit @ankushclassesjpg (1,250+ Subs)
+          </a>
+        </div>
+
+        <div class="card flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-3">Future Development</h3>
+            <p class="text-sm text-gray-400 leading-relaxed mb-4">
+              Ankush Classes will continue to expand its collection of notes, question papers, and study resources as more curriculum areas and verified materials are prepared and published.
+            </p>
+          </div>
+          <a href="contact.html" class="btn btn-outline-green text-xs self-start">
+            Submit a Subject Request
+          </a>
+        </div>
+
+      </div>
+
+      <!-- CONTACT CTA -->
+      <div class="p-8 rounded-xl bg-[#0f1317] border border-[#1e252d] text-center max-w-2xl mx-auto">
+        <h3 class="text-2xl font-bold mb-2">Have Questions or Need Help?</h3>
+        <p class="text-sm text-gray-400 mb-6">Reach out directly for academic guidance or resource inquiries.</p>
+        <a href="contact.html" class="btn btn-primary">
+          Contact Ankush Classes
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="assets/logo/ankush-classes-logo.png" alt="Ankush Classes" class="w-8 h-8 object-contain rounded">
+            <span class="font-heading font-bold text-lg">Ankush <span class="text-[#00BF63]">Classes</span></span>
+          </div>
+          <p class="text-xs text-gray-400 mb-4 max-w-sm leading-relaxed">
+            Class 8–12 notes, papers and educational resources with a focus on Humanities, English and Law basics.
+          </p>
+          <div class="text-xs text-gray-400">
+            Email: <a href="mailto:ankushchowrasiabusiness@gmail.com" class="text-gray-300 hover:text-[#00BF63] transition">ankushchowrasiabusiness@gmail.com</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="courses.html" class="footer-link">Courses</a></li>
+            <li><a href="study-materials.html" class="footer-link">Study Materials</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Support & Legal</h3>
+          <ul class="footer-links">
+            <li><a href="support.html" class="footer-link">Support</a></li>
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Community</h3>
+          <p class="text-xs text-gray-400 mb-3">Follow on YouTube for educational content and subject updates:</p>
+          <a href="https://www.youtube.com/@ankushclassesjpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-[#00BF63] hover:underline">
+            <i class="fab fa-youtube text-red-500 text-sm"></i> @ankushclassesjpg (1,250+ Subs)
+          </a>
+        </div>
+      </div>
+
+      <div class="disclaimer-box text-center mb-8">
+        Ankush Classes provides educational resources for learning and exam preparation. Information provided on this website is for educational purposes and should not be treated as professional legal advice or any other professional service.
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span class="current-year">2026</span> Ankush Classes. All rights reserved.</p>
+        <p class="text-gray-500">Created by Ankush for students.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
